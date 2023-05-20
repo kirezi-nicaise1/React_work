@@ -1,0 +1,11 @@
+body{
+    background-image: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(../public/car.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    margin: 60px;
+    color: bisque;
+    font-size: large;
+    
+}

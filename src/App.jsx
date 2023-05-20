@@ -54,7 +54,7 @@ const CarSellForm = () => {
   return (
     <div className="main">
     <form onSubmit={handleSubmit(onSubmit)}>
-      <label>
+      <label className='label'>
         Car Make:
         <input
           type="text"
@@ -63,7 +63,7 @@ const CarSellForm = () => {
           onChange={(e) => setCarMake(e.target.value)}
         />
         {errors.carMake && <p>{errors.carMake.message}</p>}
-      </label> <br />
+      </label> <br /><br />
 
       <label>
         Car Model:
@@ -74,7 +74,7 @@ const CarSellForm = () => {
           onChange={(e) => setCarModel(e.target.value)}
         />
         {errors.carModel && <p>{errors.carModel.message}</p>}
-      </label> <br />
+      </label> <br /><br />
 
       <label>
         Year:
@@ -85,7 +85,7 @@ const CarSellForm = () => {
           onChange={(e) => setYear(e.target.value)}
         />
         {errors.year && <p>{errors.year.message}</p>}
-      </label> <br />
+      </label> <br /> <br />
 
       <label>
         Mileage:
@@ -96,7 +96,7 @@ const CarSellForm = () => {
           onChange={(e) => setMileage(e.target.value)}
         />
         {errors.mileage && <p>{errors.mileage.message}</p>}
-      </label> <br />
+      </label> <br /><br />
 
       <label>
         Condition:
@@ -110,7 +110,7 @@ const CarSellForm = () => {
               onChange={(e) => setCondition(e.target.value)}
             />
             Excellent
-          </label> <br />
+          </label> <br /><br />
 
           <label>
             <input
@@ -121,7 +121,7 @@ const CarSellForm = () => {
               onChange={(e) => setCondition(e.target.value)}
             />
             Good
-          </label> <br />
+          </label> <br /><br />
 
           <label>
             <input
@@ -132,7 +132,7 @@ const CarSellForm = () => {
               onChange={(e) => setCondition(e.target.value)}
             />
             Fair
-          </label> <br />
+          </label> <br /><br />
 
           <label>
             <input
@@ -143,7 +143,7 @@ const CarSellForm = () => {
               onChange={(e) => setCondition(e.target.value)}
             />
             Poor
-          </label> <br />
+          </label> <br /><br />
         </div>
         {errors.condition && <p>{errors.condition.message}</p>}
       </label>
@@ -175,7 +175,7 @@ const CarSellForm = () => {
         {errors.features && <p>{errors.features.message}</p>}
       </label>
 
-      <label> <br />
+      <label> <br /><br />
   Transmission:
   <select
     value={transmission}
@@ -189,7 +189,7 @@ const CarSellForm = () => {
     <option value="Manual">Manual</option>
   </select>
   {errors.transmission && <p>{errors.transmission.message}</p>}
-</label> <br />
+</label> <br /><br />
 
 
       <label>
@@ -204,7 +204,7 @@ const CarSellForm = () => {
         />
         {errors.priceRange && <p>{errors.priceRange.message}</p>}
         <span>{priceRange}</span> {/* Display the current value */}
-      </label>  <br />
+      </label>  <br /><br />
 
 
 
